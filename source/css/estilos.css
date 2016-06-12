@@ -1,0 +1,32 @@
+.brand-logo{
+top: -5px;
+/*margin-top: -5px;*/
+background-image: url("../img/logo.png");
+width: 60px;
+height: 76px;
+background-size: 60px 76px;
+}
+
+.arriba-nav{
+	width: 100%;
+	height: 10px;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.contenedor-principal {
+	margin-top: 110px;
+}
+
+
+@media (max-width: 600px) {
+	.brand-logo{
+		width: 53px;
+		height: 68px;
+		background-size: 53px 68px;
+	}
+}
