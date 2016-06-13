@@ -4,37 +4,111 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>IESTP "Rep. Fed. Alemania"</title>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	<link type="text/css" rel="stylesheet" href="source/css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" href="source/css/estilos.css">
 </head>
 <body>
 
 	<!-- NAVBAR - INICIO -->
-	<header class="z-depth-2">
-		<div class="arriba-nav black"></div>
-   		<nav class="red darken-2">  <!-- Color -->
-      		<div class="nav-wrapper">
-      		<div class="container">
-        		<a href="#!" class="brand-logo"></a><a href=""></a>
-        		<ul class="right hide-on-med-and-down">
-          			<li><a href="sass.html">Sass</a></li>
-          			<li><a href="badges.html">Components</a></li>
-        		</ul>
-        	</div>
-      		</div>
-    	</nav>
-    	<div class="arriba-nav yellow"></div>
-    </header>
-  	
+		<!-- DESPLEGABLES - INICIO -->
+		<ul id="dropdown1" class="dropdown-content">
+		  <li class="yellow active"><a href="#!" class="black-text">Administración de Empresas</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Contabilidad</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Computación e Informática</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Enfermería Técnica</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Electrotecnia Industrial</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Mecánica Automotriz</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Mecánica de Producción</a></li>
+		</ul>
+		<ul id="dropdown2" class="dropdown-content">
+		  <li class="yellow active"><a href="#!" class="black-text">Nosotros</a></li>
+		  <li class="yellow"><a href="#!" class="black-text">Autoridades</a></li>
+		</ul>
+		<!-- DESPLEGABLES - FIN -->
+		
+		<div class="header z-depth-1">
+			<div class="arriba-nav black"></div>
+	   		<nav class="red darken-2">  <!-- Color -->
+	      		<div class="nav-wrapper">
+	      		<div class="container">
+	        		<a href="#!" class="brand-logo"></a>
 
+	        		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					
+	        		<ul class="right hide-on-med-and-down">
+	          			<li><a href="#!" class="waves-effect waves-yellow">INICIO</a></li>
+	          			<li><a class="dropdown-button2 waves-effect waves-yellow" href="#!" data-activates="dropdown2">ACERCA DE<i class="material-icons right">arrow_drop_down</i></a></li>
+	          			<li class="active"><a class="dropdown-button1 waves-effect waves-yellow" href="#!" data-activates="dropdown1">NUESTRAS CARRERAS<i class="material-icons right">arrow_drop_down</i></a></li>
+	          			<li><a href="#!" class="waves-effect waves-yellow">CONTÁCTENOS</a></li>
+	        		</ul>
+	        	</div>
+	      		</div>
+	    	</nav>
+	    	<div class="arriba-nav yellow"></div>
+    	</div>
+
+		<!-- MENU MOBILE - INICIO -->
+		<ul class="side-nav red darken-2" id="mobile-demo">
+			<div class="logo-slide"></div>
+				<div class="divider"></div>
+				<ul class="collapsible collapsible-accordion">
+				<li class="bold">
+					<a href="#!" class="waves-effect waves-yellow white-text">INICIO</a>
+				</li>
+				<li class="bold"> <!-- class="active" -->
+			      <a class="collapsible-header waves-effect waves-yellow white-text">ACERCA DE<i class="material-icons right">arrow_drop_down</i></a>
+			      <div class="collapsible-body yellow">
+			      	<ul>
+			      		<li>
+			      			<a href="#!"><b>Nosotros</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Autoridades</b></a>
+			      		</li>
+			      	</ul>			      	
+			      </div>
+			    </li>
+			    <li class="bold active">
+			      <a class="collapsible-header waves-effect waves-yellow white-text">NUESTRAS CARRERAS<i class="material-icons right">arrow_drop_down</i></a>
+			      <div class="collapsible-body yellow">
+			      	<ul>
+			      		<li>
+			      			<a href="#!"><b>Administración de Empresas</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Contabilidad</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Computación e Informática</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Enfermería Técnica</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Electrotecnia Industrial</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Mecánica Automotriz</b></a>
+			      		</li>
+			      		<li>
+			      			<a href="#!"><b>Mecánica de Producción</b></a>
+			      		</li>
+			      	</ul>			      	
+			      </div>
+			    </li>
+			    <li class="bold">
+					<a href="#!" class="waves-effect white-text waves-yellow">CONTÁCTENOS</a>
+				</li>
+			</ul>
+        </ul>
+        <!-- MENU MOBILE - FIN -->
   	<!-- NAVBAR - FIN -->
 
 
 	<!-- CONTENEDOR - INICIO -->
 	<div class="contenedor-principal">
 		<div class="container">
-		
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium, labore illo necessitatibus eaque rem libero expedita est eius sint quibusdam distinctio voluptatum natus! Esse ea quia, cupiditate aliquid aspernatur!
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium, labore illo necessitatibus eaque rem libero expedita est eius sint quibusdam distinctio voluptatum natus! Esse ea quia, cupiditate aliquid aspernatur!
@@ -78,5 +152,20 @@
 
 	<script type="text/javascript" src="source/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="source/js/materialize.min.js"></script>
+
+    <script>
+    	 $(document).ready(function(){
+    		$(".dropdown-button1").dropdown();
+    		$(".dropdown-button2").dropdown();
+    		$('.button-collapse').sideNav({
+    			menuWidth: 280, // Default is 240
+    			edge: 'left', // Choose the horizontal origin
+    			closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	  		});
+    	});
+
+
+
+    </script>
 </body>
 </html>
